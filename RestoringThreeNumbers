@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+	// your code goes here
+	int x1,x2,x3,x4;
+	cin>>x1>>x2>>x3>>x4;
+	int max_ans,max_ans1,max_final;
+	max_ans = max(x1,x2);
+	max_ans1 = max(x3,x4);
+	max_final = max(max_ans1,max_ans);
+	int a = max_final-x1;
+	int b = max_final-x2;
+	int c = max_final-x3;
+	int d = max_final-x4;
+	if(a==0)cout << b << " "<< c << " "<< d <<endl;
+	else if(b==0)cout << a << " "<< c << " "<< d <<endl;
+	else if(c==0)cout << b << " "<< a << " "<< d <<endl;
+	else if(d==0)cout << b << " "<< c << " "<< a << endl;
+	
+	return 0;
+}
