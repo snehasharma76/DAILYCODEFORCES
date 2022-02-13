@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+int ans,i,a[5];
+string s;
+main()
+{
+	cin>>a[1]>>a[2]>>a[3]>>a[4];
+	cin>>s;
+	for(i=0;i<s.size();i++)
+		ans+=a[s[i]-48];
+	cout<<ans;
+}
